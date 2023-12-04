@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>текст заголовока</legend>
+        <элемент управлени, обьединяемые в группу>
+    </fieldset>
+    <label>
+        Check: <input type="checkbox" name="box">
+    </label><br>
+    <label for="passwd">Пароль</label>
+    <input type="password" id="passwd" name="password" size="25">
+    <hr>
+    <input type="password" name="password" id="passwd" size="25">
+    <label for="passwd"> - пароль</label><br>
+    <label for="login">Имя:</label>
+    <input type="text" id="login" name="login" autofocus><br>
+    <label for="pass">Пароль:</label>
+    <input type="password" id="pass" name="password"><br>
+    <label>
+        <input type="checkbox" name="hobby[]"> check1
+    </label><br>
+    <label>
+        <input type="checkbox" name="hobby[]"> check2
+    </label><br>
+    <label>
+        <input type="checkbox" name="hobby[]"> check3
+    </label><br>
+    <label>
+        <input type="radio" name="radio-group" value="value_01" id="Checkbox_Group1_0" checked>1
+    </label>
+    <label>
+        <input type="radio" name="radio-group" value="value_02" id="Checkbox_Group2_0" checked>2
+    </label><br>
+    <input type="email" name="email" placeholder="это обязательное поле" required><br>
+    <button type="submit">
+        <b>Submit</b>
+    </button><br>
+    <select name="list[]" size="1" multiple id="list">
+        <option value="1">Минск</option>
+        <option value="2" disabled>Брест</option>
+        <option value="0" selected>Город</option>
+    </select>
+</body>
+</html>
