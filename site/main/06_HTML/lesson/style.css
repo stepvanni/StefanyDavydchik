@@ -1,0 +1,10 @@
+p.mini{color: #ff0000;font-size: smaller;text-decoration: underline;}
+p.sel strong{color:#ff0000}
+p em{color: #0000ff; text-decoration: line-through;}
+.bigtext{font-size: large;}
+#bigtext{font-size: large;}
+.redtext{color: #ff0000; font-weight: normal;}
+em{color: #00ff00; font-weight: bold;}
+.attention{color: #FF0000; font-style: italic;}
+#menu li a{text-shadow: 1px; color: gray;}
+#menu li{text-shadow: 1px; color: blueviolet;}

@@ -1,0 +1,30 @@
+body {
+    height: 1000px;
+}
+.header {
+    text-align: center;
+    height: 50px;
+    background: rgb(128, 0, 90);
+}
+.menu {
+    width: 200px;
+    height: 300px;
+    background: rgb(255, 0, 221);
+    float: left;
+}
+.baner {
+    width: 200px;
+    height: 300px;
+    background: rgb(255, 0, 119);
+    float: right;
+}
+.content {
+    background: rgb(255, 0, 149);
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.footer {
+    height: 50px;
+    background: rebeccapurple;
+    clear: both;
+}

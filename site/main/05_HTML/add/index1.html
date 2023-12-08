@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://sc.it-academy.by/fe/form.php" enctype="multipart/form-data">
+        <table width="700">
+            <tr>
+                <td><h3>Простая форма поиска с вариантами:</h3><Fieldset>
+                    <legend>Строка поиска</legend>
+                    <input type="text" name="text[]" id="text" pattern="[0-9]{0,10}">
+                    <button type="submit">Искать</button><br>
+                        <input type="radio" name="radio-group[]" value="value_01" id="Checkbox_Group1_0" checked> на сайте 
+                    </label>
+                    <label>
+                        <input type="radio" name="radio-group[]" value="value_02" id="Checkbox_Group2_0" checked> в google
+                    </label><br>
+                    <em>Длина запроса не более 10 символов</em>
+                </Fieldset></td>
+                <td><h3>Простая форма поиска с вариантами:</h3><fieldset>
+                    <legend>Строка поиска</legend>
+                    <input type="text" name="text[]" id="text" autofocus placeholder="это обезательное поле" required>
+                    *
+                    <button type="submit">Искать</button><br>
+                        <input type="radio" name="radio-group[]" value="value_01" id="Checkbox_Group1_0" checked> на сайте 
+                    </label>
+                    <label>
+                        <input type="radio" name="radio-group[]" value="value_02" id="Checkbox_Group2_0" checked> в google
+                    </label><br>
+                    * - <em>обязательное поле <br> Авторфокус в поле поиска</em>
+                </fieldset></td>
+            </tr>
+            <tr>
+                <td><h3>Простая форма авторизации:</h3><fieldset>
+                    <legend>Авторизуйтесь</legend>
+                    <input type="text" name="text[]" id="text" autofocus placeholder="это обязательное поле" required>
+                    *
+                    Логин<br>
+                    <input type="password" name="passwd[]" id="passwd" autofocus placeholder="это обезательное поле" required>
+                    *
+                    Пароль<br>
+                    <label>
+                        <input type="checkbox" name="hobby[]"> Оставаться в системе
+                    </label><br>
+                    <button type="submit">Войти</button><br>
+                    * - <em>обязательное поле</em>
+                </fieldset></td>
+                <td><h3>Опрос(голосование)</h3><fieldset>
+                    <legend>Как вам?</legend>
+                    <label>
+                        <input type="radio" name="radio-group[]" value="value_01" id="Checkbox_Group1_0" checked> ничего 
+                    </label><br>
+                    <label>
+                        <input type="radio" name="radio-group[]" value="value_02" id="Checkbox_Group2_0" checked> неплохо
+                    </label><br>
+                        <input type="radio" name="radio-group[]" value="value_01" id="Checkbox_Group1_0" checked> хорошо
+                    </label><br>
+                    <label>
+                        <input type="radio" name="radio-group[]" value="value_02" id="Checkbox_Group2_0" checked> супер
+                    </label><br>
+                    <input type="text" name="date_voite" value="2013.12.31" style="display: none;">
+                    <button type="submit">Отправить</button><br>
+                    <em>Есть скрытое поле <br> name=date_voite, value="2013.12.31"</em>
+                </fieldset></td>
+            </tr>
+            <tr>
+                <td><h3>Отзыв:</h3><fieldset>
+                    <legend>Оставьте Ваш отзыв</legend>
+                    <input type="text" name="text[]" id="text" autofocus placeholder="это обезательное поле" required>
+                    *
+                    Имя<br>
+                    <input type="email" name="email" id="text" autofocus placeholder="это обезательное поле" required>
+                    *
+                    e-mail<br>
+                    <textarea name="text_area" lang="ru" id="area" cols="20" rows="2">Форма отправки</textarea><br>
+                    <button type="submit">Отправить</button><br>
+                    * - <em>обязательное поле <br> поле email - с проверкой <br> метод POST</em>
+                </fieldset></td>
+                <td><h3>Выпадающий и мульти списки:</h3><fieldset>
+                    <legend>Города РБ</legend>
+                    <select name="list[]" id="list">
+                        <option value="1">Брест</option>
+                        <option value="2">Брест</option>
+                        <option value="3">Брест</option>
+                        <option value="4">Брест</option>
+                    </select>
+                    <select name="list[]" size="8" multiple id="list">
+                        <optgroup label="Города РБ">
+                        <option value="2">Брест</option>
+                        <option value="3">Минск</option>
+                        <option value="4">Витебск</option>
+                        </optgroup>
+                        <optgroup label="Города России">
+                        <option value="2">Москва</option>
+                        <option value="3">Рязань</option>
+                        <option value="4">Магадан</option>
+                        </optgroup>
+                    </select>
+                    <button type="submit">Ок</button>
+                </fieldset></td>
+            </tr>
+            <tr>
+                <td><h3>Загрузка файла на сервер:</h3><fieldset>
+                    <legend>Upload</legend>
+                    Файл: <br>
+                    <input type="file" name="file_Field[]" id="file_Field"><br> 
+                    Срок хранения (года): <br>
+                    <input type="text" name="text[]" id="text" size="5">
+                    <button type="submit">загузить</button> <br>
+                    <em>Метод POST<br> В теге form используйте атрибут <br> enctype="multipart/form-data" для отправки <br> файла на сервер</em>
+                </fieldset></td>
+                <td><h3>Валидация данных HTML5:</h3><fieldset>
+                    <legend>Строка поиска</legend>
+                    <input type="text" name="text[]" id="text" pattern="[А-Яа-яЁё].*" placeholder="Только русские буквы"><br>
+                    <em>Телефонный номер в формате <br> +XXX-XX-XXXXXXX, где X - любое число</em><br>
+                    <input type="tel" name="" id="" pattern="\+[0-9][3]-[0-9]{2}-[0-9]{7}" required><br>
+                    <button type="submit">Проверить</button>
+                </fieldset></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
